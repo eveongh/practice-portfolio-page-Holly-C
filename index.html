@@ -3,68 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>✨ Welcome to my page ✨</title>
+    <link rel = "stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Holly Cook</h1>
-        <h2>Lorem ipsum dolor sit amet.</h2>
+    <!--navigation bar-->
+<section class = "top-page">
+    <div class="container-top">
+        <a href="#" class = "logo"> 🐱 Developer </a>
+    </div>
+    <section class = "navbar">
+        <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a href="#">tech stack</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+    </section>
+</section>
+
+    <!--first section-->
+   <header class="hero">
+        <div class="hero-content">
+        <!--text (left side)-->
+            <div class="hero-text">
+                <h1>Hello, I'm Holly!</h1> <!-- note to self: make it look like it's typing dynamically-->
+                <p>I'm an aspiring developer learning how to code (｡•ᴗ•｡) </p>
+                <div class="hero-btns">
+                    <a href="#" class="btn btn-primary">
+                        View Projects
+                    </a>
+                    <a href="#" class="btn btn-secondary">
+                    Build with Holly
+                    </a>
+                </div>
+            </div>
+            <!--profile card (right side)-->
+            <div class="profile-card-container">
+                <div class="profile-card">
+                    <div class="avatar">🐱
+                    </div>
+                    <h3>Holly</h3>
+                    <div class="badge-group">
+                        <div class="badge"> Aspiring Developer</div>
+                    </div>
+
+                    <!--profile links-->
+                    <div class = "profile-links">
+                        <a href="https://www.github.com" target="_blank" rel="noopener">GitHub</a>
+                        <a href= "https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="#" target="_blank" rel="noopener">Email</a>
+                    </div>         
+                </div>
+            </div>
+        </div>
     </header>
 
-<!--About me-->
-    <section>
-        <h3>About Me</h3>
-            <p>Hello! My name is Holly. I built this page with HTML.</p>
-            <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-            </ul>
-        </section>
-
- <!--Skills table to display a list of skills or tools with proficiency levels in a table format-->
-    <section> 
-        <h3>Skills Table</h3>
-       
-            <table> 
-            <!--Columns-->
-                <tr>
-                    <th>Skills</th>
-                    <th>Proficiency</th>
-                </tr>
-            <!--Rows-->
-                <tr>
-                    <td>One</td>
-                    <td>Beginner</td>
-                 </tr>
-                 <tr>
-                    <td>Two</td>
-                    <td>Intermediate</td>
-                 </tr>
-                 <tr>
-                    <td>Three</td>
-                    <td>Advanced</td>
-                </tr>  
-            </table>
+ <!--Tech Stack-->
+    <section id="tech-stack"> 
+        <div class="skills-categ">
+            <div class="skills-box">
+                <h3><strong>Tech Stack</strong></h3>
+                <table>
+                    <tr>
+                        <td>HTML <span class ="status">Learning</span></td>
+                    </tr>
+                    <tr>
+                        <td>CSS <span class ="status">Learning</span></td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript <span class ="status">Learning</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </section>
 
-    <!--Contact form-->
-    <section>
-            <p><h3><strong>Stay in touch!</strong></h3></p>
+    <!--Contact section-->
+    <section id="contact">
+        <div class="contact-form">
+            <h3><p><strong>Like what you see? Let's work together!</strong></p></h3>
            <form>
                 <label for="visitorname">Your name:</label><br>
-                <input type="text" id="visitorname" name="visitorname"><br>
+                <input type="text" id="visitorname" name="visitorname" placeholder = "Enter your name"><br>
                 <label for="email">Your email:</label><br>
-                <input type="text" id="email" name="email"><br>
+                <input type="text" id="email" name="email" placeholder="email@example.com"required><br>
                 <label for="msg">Your Message:</label><br>
                 <textarea id="msg" name="msg"></textarea><br>
-                     <button type="submit">Send Message</button>
+                     <button type="submit" class = "submit-btn">Send Message</button>
             </form>
-    </section><br>
+        </div>
+    </section>
 
+<!--footer-->
     <footer>
-       <em>This is the footer</em>
+       <p>Created by Holly 2026 &hearts;</p>
     </footer>
-
 </body>
 </html>
