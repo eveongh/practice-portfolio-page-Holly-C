@@ -8,97 +8,101 @@
 </head>
 <body>
     <!--navigation bar-->
-<section class = "top-page">
-    <div class="container-top">
-        <a href="#" class = "logo"> 🐱 Developer </a>
-    </div>
-    <section class = "navbar">
+<div class="container-top">
+        <div class = "logo"> 🐱 holly.dev </div> 
+    <div class = "navbar">
         <ul>
-            <li><a href="#">about</a></li>
-            <li><a href="#">projects</a></li>
-            <li><a href="#">tech stack</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#aboutme">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#tech-stack">tech stack</a></li>
+            <li><a href="#contact-section">contact</a></li>
         </ul>
     </div>
-    </section>
-</section>
+</div>
 
-    <!--first section-->
-   <header class="hero">
-        <div class="hero-content">
-        <!--text (left side)-->
-            <div class="hero-text">
-                <h1>Hello, I'm Holly!</h1> <!-- note to self: make it look like it's typing dynamically-->
+<!--SECTION 1: The Header--> 
+   <header class="container-midtop">
+    <!--about me (left side)-->
+        <div class="aboutme">
+            <div class="aboutme-content">
+                <h1>Hello, I'm Holly!</h1> 
                 <p>I'm an aspiring developer learning how to code (｡•ᴗ•｡) </p>
-                <div class="hero-btns">
-                    <a href="#" class="btn btn-primary">
+                <div class="aboutme-btns">
+                    <a href="#projects" class="btn btn-primary">
                         View Projects
                     </a>
-                    <a href="#" class="btn btn-secondary">
+                    <a href="#contact-section" class="btn btn-secondary">
                     Build with Holly
                     </a>
                 </div>
             </div>
+        </div>
             <!--profile card (right side)-->
             <div class="profile-card-container">
                 <div class="profile-card">
-                    <div class="avatar">🐱
-                    </div>
+                    <img src="./img/pink_placeholder.jpg" alt="This is a placeholder image" class="profile"> <!-- place holder for img-->
                     <h3>Holly</h3>
-                    <div class="badge-group">
-                        <div class="badge"> Aspiring Developer</div>
-                    </div>
-
-                    <!--profile links-->
-                    <div class = "profile-links">
-                        <a href="https://www.github.com" target="_blank" rel="noopener">GitHub</a>
-                        <a href= "https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-                        <a href="#" target="_blank" rel="noopener">Email</a>
-                    </div>         
+                    <h5>Aspiring Developer</h5>
                 </div>
-            </div>
-        </div>
+                </div>
     </header>
-
- <!--Tech Stack-->
-    <section id="tech-stack"> 
-        <div class="skills-categ">
-            <div class="skills-box">
-                <h3><strong>Tech Stack</strong></h3>
-                <table>
-                    <tr>
-                        <td>HTML <span class ="status">Learning</span></td>
-                    </tr>
-                    <tr>
-                        <td>CSS <span class ="status">Learning</span></td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript <span class ="status">Learning</span></td>
-                    </tr>
-                </table>
-            </div>
+ <!--SECTION 2: Tech Stack / Skills Section-->
+ <main>
+    <div id="tech-stack">
+        <div class="skills-box">
+            <h3><strong>Tech Stack</strong></h3>
+                <ul>
+                <li>HTML <span class ="progress">Learning</span></li>
+                <li>CSS <span class ="progress">Learning</span></li>
+                <li>JavaScript <span class ="progress">Learning</span></li>
+                </ul>
         </div>
-    </section>
+    </div>
 
-    <!--Contact section-->
-    <section id="contact">
-        <div class="contact-form">
-            <h3><p><strong>Like what you see? Let's work together!</strong></p></h3>
-           <form>
-                <label for="visitorname">Your name:</label><br>
-                <input type="text" id="visitorname" name="visitorname" placeholder = "Enter your name"><br>
-                <label for="email">Your email:</label><br>
-                <input type="text" id="email" name="email" placeholder="email@example.com"required><br>
-                <label for="msg">Your Message:</label><br>
-                <textarea id="msg" name="msg"></textarea><br>
-                     <button type="submit" class = "submit-btn">Send Message</button>
+    <!--SECTION 3: Projects-->
+
+    <div id="projects">
+        <div class="projects-box">
+            <h3><strong>Projects</strong></h3>
+            <p class="placeholder-message">Coming soon</p>
+        </div>
+    </div>
+
+    <!--SECTION 4: Contact section-->
+
+    <div id="contact-section">
+        <div class="contact-container">
+            <h2>Let's work together</h2>
+            <p class="contact-subtitle">Have a project in mind? Send me a message</p>
+
+            <!--My contact details-->
+            <div class = "profile-links">
+                <a href="https://www.github.com" target="_blank" rel="noopener">GitHub</a>
+                <a href= "https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:name@example.com" target="_blank" rel="noopener">Email</a>
+            </div>
+
+            <!--Form-->
+            <form class="visitor-form">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email"> Email</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                <label for="phone"> Phone</label>
+                <input type="text" id="phone" name="phone" placeholder="Optional">
+                <label for ="message">Message</label>
+                <textarea id="message" name="message" rows="5" cols="30" placeholder="Write your message here" required></textarea>
+            <!--submit button-->
+                <input type="submit" value="submit">
             </form>
         </div>
-    </section>
+    </div>
 
-<!--footer-->
+</main>
+
+<!--SECTION 5: The Footer-->
     <footer>
-       <p>Created by Holly 2026 &hearts;</p>
+       <p>Created by Holly 2026 </p>
     </footer>
 </body>
 </html>
