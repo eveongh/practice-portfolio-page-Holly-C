@@ -18,8 +18,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 10%;
-    backdrop-filter: blur(10px);
     border-bottom: 1px solid #fce4ec;
+
 }
 
 .logo {
@@ -167,14 +167,10 @@ body {
   padding: 14px 0;
   color: #7a6873;
   font-weight: 500;
-  border-bottom: 1px 
+  border-bottom: 1px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-.skills-box li:last-child {
-  border-bottom: none;
+  justify-content: space-evenly;
 }
 
 .progress {
@@ -207,7 +203,7 @@ body {
 .projects-box h3 {
   margin-bottom: 20px;
   color: #4a3b45;
-  font-size: 1.5 rem;
+  font-size: 1.5rem;
 }
 
 .placeholder-message {
@@ -223,7 +219,7 @@ body {
   padding: 30px 20px;
 }
 
-.contact-container {
+#contact-container {
   background-color: white;
   border: 1px solid #fce4ec;
   border-radius: 16px;
@@ -232,17 +228,17 @@ body {
   padding: 30px;
 }
 
-.contact-container h2{
+#contact-container h2{
   color: #4a3b45;
   text-align:center;
 }
 
-.contact-subtitle {
+.subtitle {
   text-align: center;
   color: #7a6873;
   font-size: 14px;
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .profile-links {
@@ -269,14 +265,13 @@ body {
 }
 
 .visitor-form label {
-  font-size 14px;
+  font-size: 14px;
   color: #7a6873;
   margin-bottom: 5px;
-  margin-top 15px;
+  margin-top: 15px;
 }
 
-.visitor-form input[type="text"],
-.visitor-form input[type="email"],
+.visitor-form input,
 .visitor-form textarea {
   width: 100%;
   padding: 12px;
@@ -298,13 +293,10 @@ body {
   width: 100%; 
   padding: 10px; 
   margin-top: 20px; 
-
   background-color: #ff85a1;
   color: white;
-
   border:none;
   border-radius:25px;
-  
   font-size: 15px;
   font-weight: 600;
   
@@ -313,6 +305,7 @@ body {
 .visitor-form input[type=submit]:hover{
   transition: 0.3s;
   background-color: #e05878;
+  cursor: pointer; /*browser treats submit as a text input, not a button*/
 }
 
 /* footer */ 
